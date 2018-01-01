@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a91910.myapplication.TaskDescriptionActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp"
+        tools:context="com.raywenderlich.todolist.TaskDescriptionActivity">
+
+        <TextView android:id="@+id/descriptionLabel"
+            android:text="事項"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="20dp"/>
+
+        <EditText android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="20dp"
+            android:layout_below="@+id/descriptionLabel"/>
+
+        <Button android:id="@+id/doneBtn" android:text="確認" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/descriptionText" android:padding="20dp" android:onClick="doneClicked"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
